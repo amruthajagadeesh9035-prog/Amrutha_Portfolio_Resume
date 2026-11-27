@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me | Amrutha</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+
+    <style>
+        /* ABOUT HERO */
+
+        .about-hero {
+            background: #123B32;
+            color: #F7F2E8;
+            text-align: center;
+            padding: 75px 20px;
+            border-bottom: 3px solid #C6A15B;
+        }
+
+        .about-hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .about-hero h1 span {
+            color: #D5B36A;
+        }
+
+        .about-hero p {
+            color: #E0D7C5;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+        /* ABOUT CONTENT */
+
+        .about-container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 25px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        /* PROFILE CARD */
+
+        .about-profile {
+            background: #123B32;
+            padding: 45px 25px;
+            text-align: center;
+            border: 2px solid #C6A15B;
+            box-shadow: 10px 10px #D8C9AA;
+        }
+
+        .about-profile .initial {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #F7F2E8;
+            color: #A17B35;
+            border: 3px solid #C6A15B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 65px;
+        }
+
+        .about-profile h2 {
+            color: #F7F2E8;
+            margin-bottom: 10px;
+        }
+
+        .about-profile p {
+            color: #D5B36A;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* ABOUT DETAILS */
+
+        .about-details h2 {
+            color: #123B32;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-details h2 span {
+            color: #B28B45;
+        }
+
+        .about-details p {
+            color: #68645D;
+            line-height: 2;
+            font-family: Arial, sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .about-details .primary-btn {
+            margin-top: 15px;
+        }
+
+        /* ACADEMIC JOURNEY */
+
+        .about-facts {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 25px 30px;
+        }
+
+        .about-facts h2 {
+            text-align: center;
+            color: #123B32;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .fact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .fact-card {
+            background: #FFFDF8;
+            padding: 30px 20px;
+            border: 1px solid #D8C9AA;
+            border-bottom: 3px solid #C6A15B;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-8px);
+            background: #EEE6D6;
+        }
+
+        .fact-card h3 {
+            color: #A17B35;
+            margin-bottom: 12px;
+        }
+
+        .fact-card p {
+            color: #68645D;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
+
+        .about-footer {
+            background: #252525;
+            border-top: 3px solid #C6A15B;
+            padding: 28px;
+            text-align: center;
+            color: #F7F2E8;
+            line-height: 2;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 750px) {
+
+            .about-container {
+                grid-template-columns: 1fr;
+                margin: 40px auto;
+            }
+
+            .fact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-hero h1 {
+                font-size: 35px;
+            }
+
+            .about-details h2 {
+                font-size: 27px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            Amrutha<span>.</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- ABOUT HERO -->
+
+<section class="about-hero">
+
+    <h1>About <span>Me</span></h1>
+
+    <p>
+        Discover my journey, education and passion for technology.
+    </p>
+
+</section>
+
+<!-- ABOUT CONTENT -->
+
+<section class="about-container">
+
+    <div class="about-profile">
+
+        <div class="initial">A</div>
+
+        <h2>Amrutha</h2>
+
+        <p>Computer Science Engineering Student</p>
+
+    </div>
+
+    <div class="about-details">
+
+        <h2>Who <span>Am I?</span></h2>
+
+        <p>
+            Hello! I am Amrutha, a Computer Science and Engineering
+            student pursuing my Bachelor of Engineering at Rajeev
+            Institute of Technology.
+        </p>
+
+        <p>
+            I am passionate about programming, web development,
+            database management and exploring emerging technologies.
+            I enjoy transforming ideas into practical applications.
+        </p>
+
+        <p>
+            I have worked on projects involving Python, Flask,
+            HTML, CSS, JavaScript and SQL. These projects have
+            helped me improve my problem-solving and development skills.
+        </p>
+
+        <p>
+            My ambition is to become a skilled software professional
+            and contribute to meaningful technology solutions.
+        </p>
+
+        <a href="resume.html" class="primary-btn">
+            Explore My Resume
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ACADEMIC JOURNEY -->
+
+<section class="about-facts">
+
+    <h2>My Academic Journey</h2>
+
+    <div class="fact-grid">
+
+        <div class="fact-card">
+
+            <h3>Education</h3>
+
+            <p>Bachelor of Engineering</p>
+
+            <p>Computer Science and Engineering</p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h3>Institution</h3>
+
+            <p>Rajeev Institute of Technology</p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h3>Interests</h3>
+
+            <p>Web Development</p>
+
+            <p>Programming</p>
+
+            <p>Software Development</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="about-footer">
+
+    <p>© 2026 Amrutha | Personal Portfolio Website</p>
+
+    <p>Designed with HTML, CSS, JavaScript and jQuery</p>
+
+</footer>
+
+</body>
+</html>

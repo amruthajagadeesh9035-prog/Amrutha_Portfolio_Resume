@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Amrutha</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .skills-section {
+            min-height: 100vh;
+            padding: 65px 8%;
+            background: #F7F2E8;
+        }
+
+        .skills-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .skills-heading h1 {
+            color: #123B32;
+            font-size: 40px;
+        }
+
+        .skills-heading p {
+            color: #666;
+        }
+
+        .skills-container {
+            max-width: 1050px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            border-top: 5px solid #C6A15B;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .skill-card h2 {
+            color: #123B32;
+            margin-bottom: 22px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .progress {
+            height: 11px;
+            background: #E9E3D7;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #123B32, #C6A15B);
+            border-radius: 20px;
+            transition: width 1.5s ease;
+        }
+
+        .other-skills {
+            max-width: 1050px;
+            margin: 35px auto 0;
+            padding: 30px;
+            background: #123B32;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .other-skills h2 {
+            color: #C6A15B;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: 10px 18px;
+            margin: 7px;
+            background: #F7F2E8;
+            color: #123B32;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .skills-message {
+            max-width: 850px;
+            margin: 35px auto 0;
+            text-align: center;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media(max-width: 700px) {
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-heading h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="skills-section">
+
+    <div class="skills-heading">
+        <h1>My Technical Skills</h1>
+        <p>Technologies and tools I am learning and working with</p>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h2>Programming</h2>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Python</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="60%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h2>Web Development</h2>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>HTML</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>CSS</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Flask</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="65%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h2>Database</h2>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>SQL</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="70%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h2>Development Tools</h2>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Git & GitHub</span>
+                    <span>Learning</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" data-width="60%"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="other-skills">
+        <h2>Areas of Interest</h2>
+        <span class="skill-tag">Web Development</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Database Management</span>
+        <span class="skill-tag">Software Development</span>
+        <span class="skill-tag">Problem Solving</span>
+    </div>
+
+    <p class="skills-message">
+        I believe in continuous learning and improving my technical
+        abilities by building practical projects and exploring new technologies.
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Amrutha | Personal Portfolio</p>
+</footer>
+
+<script>
+    window.addEventListener("load", function () {
+        const bars = document.querySelectorAll(".progress-bar");
+
+        bars.forEach(function(bar) {
+            bar.style.width = bar.getAttribute("data-width");
+        });
+    });
+</script>
+
+</body>
+</html>

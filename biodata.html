@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata | Amrutha BJ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .biodata-section {
+            padding: 60px 8%;
+            background: #F7F2E8;
+            min-height: 100vh;
+        }
+
+        .biodata-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .biodata-heading h1 {
+            color: #123B32;
+            font-size: 38px;
+        }
+
+        .biodata-heading p {
+            color: #666;
+        }
+
+        .biodata-card {
+            max-width: 950px;
+            margin: auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+        }
+
+        .biodata-top {
+            background: #123B32;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #C6A15B;
+        }
+
+        .biodata-top h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .biodata-content {
+            padding: 35px;
+        }
+
+        .bio-group {
+            margin-bottom: 30px;
+        }
+
+        .bio-group h3 {
+            color: #123B32;
+            border-bottom: 2px solid #C6A15B;
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+        }
+
+        .bio-row {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 15px;
+            padding: 12px 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .bio-label {
+            font-weight: bold;
+            color: #123B32;
+        }
+
+        .bio-value {
+            color: #555;
+        }
+
+        .bio-note {
+            background: #F7F2E8;
+            border-left: 4px solid #C6A15B;
+            padding: 15px;
+            line-height: 1.7;
+        }
+
+        .bio-button {
+            display: block;
+            width: fit-content;
+            margin: 25px auto 0;
+            padding: 12px 25px;
+            background: #123B32;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .bio-button:hover {
+            background: #C6A15B;
+            color: #123B32;
+        }
+
+        @media(max-width: 600px) {
+            .bio-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .biodata-content {
+                padding: 20px;
+            }
+
+            .biodata-heading h1 {
+                font-size: 30px;
+            }
+        }
+
+        @media print {
+            header, footer, .bio-button {
+                display: none !important;
+            }
+
+            .biodata-section {
+                padding: 10px;
+                background: white;
+            }
+
+            .biodata-card {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Amrutha<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biodata.html" class="active">Biodata</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Biodata Section -->
+<section class="biodata-section">
+
+    <div class="biodata-heading">
+        <h1>My Biodata</h1>
+        <p>A brief profile of my academic background and interests</p>
+    </div>
+
+    <div class="biodata-card">
+
+        <div class="biodata-top">
+            <h2>AMRUTHA</h2>
+            <p>Computer Science and Engineering Student</p>
+        </div>
+
+        <div class="biodata-content">
+
+            <!-- Personal Profile -->
+            <div class="bio-group">
+                <h3>Personal Profile</h3>
+
+                <div class="bio-row">
+                    <div class="bio-label">Full Name</div>
+                    <div class="bio-value">Amrutha</div>
+                </div>
+
+                <div class="bio-row">
+                    <div class="bio-label">Professional Role</div>
+                    <div class="bio-value">Student</div>
+                </div>
+
+                <div class="bio-row">
+                    <div class="bio-label">Field of Interest</div>
+                    <div class="bio-value">Computer Science and Technology</div>
+                </div>
+            </div>
+
+            <!-- Educational Details -->
+            <div class="bio-group">
+                <h3>Educational Details</h3>
+
+                <div class="bio-row">
+                    <div class="bio-label">Degree</div>
+                    <div class="bio-value">Bachelor of Engineering (B.E.)</div>
+                </div>
+
+                <div class="bio-row">
+                    <div class="bio-label">Department</div>
+                    <div class="bio-value">Computer Science and Engineering</div>
+                </div>
+
+                <div class="bio-row">
+                    <div class="bio-label">Institution</div>
+                    <div class="bio-value">Rajeev Institute of Technology</div>
+                </div>
+            </div>
+
+            <!-- Technical Background -->
+            <div class="bio-group">
+                <h3>Technical Background</h3>
+
+                <div class="bio-row">
+                    <div class="bio-label">Programming</div>
+                    <div class="bio-value">Python, JavaScript</div>
+                </div>
+
+                <div class="bio-row">
+                    <div class="bio-label">Web Technologies</div>
+                    <div class="bio-value">HTML, CSS, Flask</div>
+                </div>
+
+                <div class="bio-row">
+                    <div class="bio-label">Database</div>
+                    <div class="bio-value">SQL</div>
+                </div>
+            </div>
+
+            <!-- Career Objective -->
+            <div class="bio-group">
+                <h3>Career Objective</h3>
+
+                <div class="bio-note">
+                    To develop my technical knowledge, improve my
+                    problem-solving abilities, and build useful
+                    software applications through continuous learning
+                    and practical experience.
+                </div>
+            </div>
+
+            <!-- Declaration -->
+            <div class="bio-group">
+                <h3>Declaration</h3>
+
+                <p>
+                    I hereby declare that the information provided
+                    in this biodata is true to the best of my knowledge.
+                </p>
+            </div>
+
+            <button class="bio-button" onclick="window.print()">
+                Print / Save Biodata as PDF
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Amrutha | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
